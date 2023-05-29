@@ -16,6 +16,16 @@ console.log(nuemro === numeroString);
   console.log(nuemro + numeroString);
 
   //Conversão explicita
-  //Number()
+  //Number() e '+'
   console.log(nuemro + Number(numeroString));
   console.log(nuemro + Number("123EDD123"));
+  let largura = "10";
+  let altura = "5";
+  console.log( + largura * + altura); // teremos a conversão de String para números realizado usando o + antes das variáveis
+
+  //String() e .toString()
+  let telefone = 123456789;
+  console.log("O telefone é " + String(telefone));
+  console.log("O telefone é " + telefone.toString());
+  console.log(typeof String(telefone));
+  console.log(typeof telefone.toString());
